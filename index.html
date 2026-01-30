@@ -23,6 +23,8 @@
             <button class="add-task-btn">+</button>
         </div>
 
+        <button id="clear-completed-btn" class="clear-btn">Clear Completed</button>
+
         <ul class="task-list">
             <li class="task-item">
                 <input type="checkbox" class="task-checkbox">
@@ -43,5 +45,16 @@
     </div>
 
     <script src="script.js"></script>
+
+    <div class="pomodoro-timer">
+        <h2 id="timer-state">Work</h2>
+        <div id="timer-display">25:00</div>
+        <div class="timer-controls">
+            <button id="start-timer">Start</button>
+            <button id="pause-timer">Pause</button>
+            <button id="reset-timer">Reset</button>
+            <button id="skip-timer">Skip</button>
+        </div>
+    </div>
 </body>
 </html>
