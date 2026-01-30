@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Tasks Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+</head>
+<body>
+    <div id="clock"></div>
+    <div class="container">
+        <header>
+            <h1>My Tasks</h1>
+            <div class="theme-switcher">
+                <input type="checkbox" id="theme-toggle">
+                <label for="theme-toggle"></label>
+            </div>
+        </header>
+
+        <div class="new-task">
+            <input type="text" class="new-task-input" placeholder="Add a new task">
+            <button class="add-task-btn">+</button>
+        </div>
+
+        <ul class="task-list">
+            <li class="task-item">
+                <input type="checkbox" class="task-checkbox">
+                <span class="task-name">Create a new repository</span>
+                <button class="delete-btn">🗑️</button>
+            </li>
+            <li class="task-item">
+                <input type="checkbox" class="task-checkbox">
+                <span class="task-name">Update the README file</span>
+                <button class="delete-btn">🗑️</button>
+            </li>
+            <li class="task-item">
+                <input type="checkbox" class="task-checkbox" checked>
+                <span class="task-name completed">Push changes to GitHub</span>
+                <button class="delete-btn">🗑️</button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
